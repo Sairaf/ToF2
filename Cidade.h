@@ -17,14 +17,16 @@ class Cidade
  protected:
     string nome;
     vector <string> npc;
+    const static int MAX_NPC;
  public:
-  Cidade(string nome = "Cidade"); 
+  Cidade(string nome = "Cidade");
   Cidade(const Cidade&);
   virtual ~Cidade();
 
   void   setNome(const string&);
   string getNome() const;
 
+  static void Welcome(const Cidade&);
   void Add_NPC(const string&);
   virtual void Menu_Cidade(Grupo&) = 0;
   virtual void Menu_Texto_Cidade() = 0;

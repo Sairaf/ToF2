@@ -68,3 +68,8 @@ Dungeon* Dungeon::operator+=(const Dungeon& dung)
  this->nome_Dungeon+= this->nome_Dungeon+dung.nome_Dungeon;
  return this;
 }
+
+void Dungeon::Welcome_Dungeon(const Dungeon& Dungeon)
+{
+ cout << "Bem-vindo a Dungeon" << Dungeon.get_Nome() << endl;
+}

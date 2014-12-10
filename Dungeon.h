@@ -28,7 +28,7 @@ class Dungeon
 
     int get_Sala() const;
     string get_Nome() const;
-
+    static void Welcome_Dungeon(const Dungeon&);
     virtual void Salas(Grupo& grupo) = 0;
     virtual void Mostrar_Salas(const int& num_sala) = 0;
     static void Verificar_Num_Salas(const Dungeon&);

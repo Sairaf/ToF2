@@ -5,6 +5,8 @@
 #include <vector>
 #include <list>
 #include <iostream>
+#include <stdlib.h>
+#include <time.h>
 #include <assert.h>
 
 using namespace std;
@@ -32,7 +34,7 @@ public:
 	string get_Descricao_Item() const;
 	int    get_Durabilidade() const;
 
-	virtual void Diminuir_Durabilidade();
+	static void Diminuir_Durabilidade(Item& item);
 
     virtual void Efeito() = 0;
     Item* operator+=(const Item&);

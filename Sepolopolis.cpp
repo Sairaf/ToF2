@@ -23,6 +23,7 @@ void Sepolopolis::Add_NPC(const string& npc){
 void Sepolopolis::Menu_Cidade(Grupo& grupo)
 {
  int opcao;
+ Welcome(*this);
  this->Menu_Texto_Cidade();
  cin >> opcao;
  switch(opcao)

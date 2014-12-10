@@ -17,11 +17,13 @@
 	<assert.h>
 	"Item.h"
 
-1418213935 c:\users\propespinfo\documents\github\tof2\tof2\item.h
+1418215631 c:\users\propespinfo\documents\github\tof2\tof2\item.h
 	<string>
 	<vector>
 	<list>
 	<iostream>
+	<stdlib.h>
+	<time.h>
 	<assert.h>
 
 1418125759 source:c:\users\propespinfo\documents\github\tof2\tof2\anel_de_forca.cpp
@@ -76,7 +78,7 @@
 	"Monstro.h"
 	"Magia.h"
 
-1418210283 c:\users\propespinfo\documents\github\tof2\tof2\monstro.h
+1418214330 c:\users\propespinfo\documents\github\tof2\tof2\monstro.h
 	<string>
 	<vector>
 	<list>
@@ -104,7 +106,7 @@
 	"Camtasia.h"
 	"Monstro.h"
 
-1418210283 c:\users\propespinfo\documents\github\tof2\tof2\dungeon.h
+1418215172 c:\users\propespinfo\documents\github\tof2\tof2\dungeon.h
 	<time.h>
 	<stdlib.h>
 	<iostream>
@@ -131,7 +133,7 @@
 	"Monstro.h"
 	"Grupo_Geral.h"
 
-1418212991 c:\users\propespinfo\documents\github\tof2\tof2\heroi.h
+1418214543 c:\users\propespinfo\documents\github\tof2\tof2\heroi.h
 	<string>
 	<vector>
 	<list>
@@ -205,17 +207,17 @@
 	"Magia.h"
 	"Kuraudo_Mirrors.h"
 
-1418210283 c:\users\propespinfo\documents\github\tof2\tof2\kuraudo_mirrors.h
+1418215563 c:\users\propespinfo\documents\github\tof2\tof2\kuraudo_mirrors.h
 	"Item.h"
 	<string>
 	<vector>
 	<list>
 	<iostream>
 
-1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\cidade.cpp
+1418214765 source:c:\users\propespinfo\documents\github\tof2\tof2\cidade.cpp
 	"Cidade.h"
 
-1418210283 c:\users\propespinfo\documents\github\tof2\tof2\cidade.h
+1418214784 c:\users\propespinfo\documents\github\tof2\tof2\cidade.h
 	<iostream>
 	<cstdlib>
 	<stdlib.h>
@@ -224,10 +226,10 @@
 	<string.h>
 	"Grupo.h"
 
-1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\dungeon.cpp
+1418215179 source:c:\users\propespinfo\documents\github\tof2\tof2\dungeon.cpp
 	"Dungeon.h"
 
-1418125760 source:c:\users\propespinfo\documents\github\tof2\tof2\equipamento.cpp
+1418214064 source:c:\users\propespinfo\documents\github\tof2\tof2\equipamento.cpp
 	"Equipamento.h"
 
 1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\espada.cpp
@@ -248,7 +250,7 @@
 1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\heroi.cpp
 	"Heroi.h"
 
-1418125760 source:c:\users\propespinfo\documents\github\tof2\tof2\item.cpp
+1418213926 source:c:\users\propespinfo\documents\github\tof2\tof2\item.cpp
 	"Item.h"
 
 1418210277 source:c:\users\propespinfo\documents\github\tof2\tof2\kuraudo.c
@@ -332,13 +334,13 @@
 1418125760 source:c:\users\propespinfo\documents\github\tof2\tof2\menu.cpp
 	"Menu.h"
 
-1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\monstro.cpp
+1418214356 source:c:\users\propespinfo\documents\github\tof2\tof2\monstro.cpp
 	"Monstro.h"
 
 1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\roupas_leves.cpp
 	"Roupas_Leves.h"
 
-1418210283 source:c:\users\propespinfo\documents\github\tof2\tof2\sepolopolis.cpp
+1418214835 source:c:\users\propespinfo\documents\github\tof2\tof2\sepolopolis.cpp
 	"Sepolopolis.h"
 
 1418213005 source:c:\users\propespinfo\documents\github\tof2\tof2\teste_dungeon.cpp

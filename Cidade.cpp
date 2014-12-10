@@ -32,6 +32,11 @@ string Cidade::getNome () const
  return this->nome;
 }
 
+void Cidade::Welcome(const Cidade& cidade)
+{
+ cout << "Bem-vindo a cidade" << cidade.getNome() << endl;
+}
+
 ostream& operator<<(ostream& output, const Cidade& cidade)
 {
  output << "Nome da cidade: " << cidade.getNome()<< endl;

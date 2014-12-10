@@ -19,7 +19,7 @@ public:
 	~Kuraudo_Mirrors();
 
     Kuraudo_Mirrors* operator+=(const Kuraudo_Mirrors&);
-    void Diminuir_Durabilidade(){};
+    void Diminuir_Durabilidade();
     void Efeito();
 };
 

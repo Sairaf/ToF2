@@ -1,5 +1,6 @@
 #include "Monstro.h"
 
+int Monstro::max_exp = 9999;
 
 Monstro::Monstro(string nome, string descricao)
 :nome_Monstro(nome), descricao_Monstro(descricao)
@@ -127,7 +128,7 @@ void Monstro::set_Vel_Monstro(const int& vel){
 }
 
 void Monstro::set_Exp(const int& exp){
-   if(exp >= 0)
+   if(exp >= 0 && exp <= max_exp)
      this->exp_Ganha = exp;
    else
      this->exp_Ganha = 0;

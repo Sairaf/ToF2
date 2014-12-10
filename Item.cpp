@@ -60,12 +60,6 @@ int Item::get_Durabilidade() const{
   return this->durabilidade;
 }
 
-void Item::Diminuir_Durabilidade(){
-  if(this->consumivel == true)
-    this->durabilidade-=1;
-  /*else
-    cout << "Este item pode ser utilizado diversas vezes";*/
-}
 
 ostream& operator<<(ostream& output, const Item& item){
  output << "Nome do item" << item.get_Nome_Item() << endl;
@@ -83,4 +77,14 @@ Item* Item::operator+=(const Item& item)
 {
  this->durabilidade+= item.durabilidade;
  return this;
+}
+
+void Item::Diminuir_Durabilidade(Item& item)
+{
+ if(item.consumivel == true)
+ {
+  srand(time(NULL))   ;
+  int sorte = rand()%5 +0;
+  item.durabilidade-= sorte +1;
+ }
 }

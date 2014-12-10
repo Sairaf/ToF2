@@ -22,7 +22,6 @@ protected:
   	Arma* arma;
  	Armadura* armadura;
  	Acessorio* acessorio;
-    static int MAX_LV ;
     int lv_Atual;
 	int HP;
 	int HP_atual;
@@ -32,8 +31,9 @@ protected:
 	int defesa;
 	int velocidade;
 	int magia;
-	static const  int MAX_HP = 9999;
-	static const  int MAX_MP = 9999;
+    static int MAX_LV ;
+	const static int MAX_HP = 9999;
+	const static int MAX_MP = 9999;
 
 public:
 	Heroi(string nome = "HERO", string descricai = "UM HEROI");

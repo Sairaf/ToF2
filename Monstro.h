@@ -28,8 +28,9 @@ protected:
 	int magia;
 	int exp_Ganha;
 	Item* drop;
-	static const int max_Hp = 99999;
-	static const int max_Mp = 99999;
+	static int max_exp;
+	const static int max_Hp = 99999;
+	const static int max_Mp = 99999;
 
 
 
@@ -66,12 +67,12 @@ public:
 	int get_Mag_Monstro() const;
 	int get_Vel_Monstro() const;
 	vector <Magia*> get_Habilidades_Monstro () const;
-        int get_Exp()const;
-        Item* get_Item() const;
+    int get_Exp()const;
+    Item* get_Item() const;
 
-        void Atacar(const int&);
-        virtual void Def_Stats() = 0;
-        Monstro* operator+=(const Monstro&);
+    void Atacar(const int&);
+    virtual void Def_Stats() = 0;
+    Monstro* operator+=(const Monstro&);
 };
 
 #endif

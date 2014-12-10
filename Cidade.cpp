@@ -34,7 +34,7 @@ string Cidade::getNome () const
 
 void Cidade::Welcome(const Cidade& cidade)
 {
- cout << "Bem-vindo a cidade" << cidade.getNome() << endl;
+ cout << "Bem-vindo a cidade " << cidade.getNome() << endl;
 }
 
 ostream& operator<<(ostream& output, const Cidade& cidade)

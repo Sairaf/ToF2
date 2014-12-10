@@ -267,19 +267,19 @@ ostream& operator<<(ostream& output, const Heroi& heroi){
     if(heroi.arma == NULL){
      output << "Nao possui arma."<< endl;
     }else{
-     output << "Arma: " <<heroi.arma <<endl;
+     output << heroi.arma <<endl;
     }
 
     if(heroi.armadura == NULL){
      output << "Nao possui armadura."<< endl;
     }else{
-     output << "Armadura: " <<heroi.armadura[0] <<endl;
+     output << heroi.armadura[0] <<endl;
     }
 
     if(heroi.armadura == NULL){
      output << "Nao possui acessorio."<< endl;
     }else{
-     output << "Acessorio: " <<heroi.acessorio[0] <<endl;
+     output << heroi.acessorio[0] <<endl;
     }
     return output;
 }

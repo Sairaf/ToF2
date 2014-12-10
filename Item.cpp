@@ -62,14 +62,16 @@ int Item::get_Durabilidade() const{
 
 
 ostream& operator<<(ostream& output, const Item& item){
- output << "Nome do item" << item.get_Nome_Item() << endl;
- output << "Descricao do item" << item.get_Descricao_Item() << endl;
- output << "Durabilidade" << item.get_Durabilidade() << endl;
+ output << endl;
+ output << "Nome do item: " << item.get_Nome_Item() << endl;
+ output << "Descricao do item: " << item.get_Descricao_Item() << endl;
+ output << "Durabilidade: " << item.get_Durabilidade() << endl;
  if(item.consumivel == true)
-  output<< "Este item e consumivel"    << endl;
+  output<< "Este item e consumivel. "    << endl;
  else{
-  output<< "Este item nao e consumivel"    << endl;
+  output<< "Este item nao e consumivel."    << endl;
  }
+ output << endl;
  return output;
 }
 

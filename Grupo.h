@@ -28,13 +28,13 @@ typedef struct {
 }Posicao;
 
 
-class Grupo : public Grupo_Geral
+class Grupo //: public Grupo_Geral
 {
   friend ostream& operator<<(ostream&, const Grupo&);
   protected:
     int MAX_HEROIS;
     int MAX_ITENS;
-    int Dinheiro;
+    int dinheiro;
 
   public:
     Grupo(string nome = "Grupo");

@@ -1,12 +1,12 @@
 #include "Anel_de_Forca.h"
-
+/*
 Anel::Anel(int poder)
 :Acessorio(poder)
 {
 
 
 }
-
+*/
 Anel::Anel()
 :Acessorio("Anel de forca", "Anel que concede um bonus de forca ao usuario",1,1,0,0,"Fogo",15)
 {

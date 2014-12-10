@@ -103,10 +103,11 @@ return this->bonus_Vel;
 
 ostream& operator<<(ostream& output, const Equipamento& equipamento){
  output << static_cast <const Item&> (equipamento) << "\n";
- output << "Bonus de ataque:" << equipamento.getAtk() << endl;
- output << "Bonus de defesa:" << equipamento.getDef() << endl;
- output << "Bonus de magia:"  << equipamento.getMag() << endl;
- output << "Bonus de velocidade:" << equipamento.getVel() << endl;
+ output << "Bonus de ataque: " << equipamento.getAtk() << endl;
+ output << "Bonus de defesa: " << equipamento.getDef() << endl;
+ output << "Bonus de magia: "  << equipamento.getMag() << endl;
+ output << "Bonus de velocidade: " << equipamento.getVel() << endl;
+ output << endl;
  return output;
 }
 

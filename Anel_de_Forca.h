@@ -16,7 +16,7 @@ class Anel : public Acessorio
 {
  friend ostream& operator<<(ostream&, const Anel&);
  public:
-    Anel(int poder = 0);
+  //  Anel(int poder = 0);
 	Anel();
 	Anel(const Anel&);
 	~Anel();

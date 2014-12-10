@@ -1,22 +1,23 @@
 #include "Grupo.h"
 
 Grupo::Grupo(string nome)
-:Grupo_Geral(nome)
+//:Grupo_Geral(nome), equipe(3)
 {
- int i;
-
+ this->set_Dinheiro(1000);
+ //this->equipe = new vector<Heroi>;
 }
 
 
 Grupo::Grupo(const Grupo& grupo_Cpy)
-:Grupo_Geral(grupo_Cpy)
+//:Grupo_Geral(grupo_Cpy),equipe(3)
 {
+ this->set_Dinheiro(grupo_Cpy.dinheiro);
  this->equipe = grupo_Cpy.equipe;
  this->inventario = grupo_Cpy.inventario;
 }
 
 Grupo::Grupo(Heroi* grupo,Item* inventario)
-:Grupo_Geral("Party")
+//:Grupo_Geral("Party"),equipe(3)
 {
 this->equipe.push_back(grupo);
 this->inventario.push_back(inventario);
@@ -26,8 +27,8 @@ this->inventario.push_back(inventario);
 void Grupo::set_Heroi(Heroi* heroi){
    if(heroi != 0)
    {
-    this->equipe.push_back(heroi);
-    cout << "oi" << endl;
+    this->equipe.push_back(new Mago());
+    //cout << "oi" << endl;
    }
    else
     cout << "Equipe esta cheia" << endl;
@@ -47,14 +48,14 @@ void Grupo::set_Item(Item* item){
 void Grupo::set_Dinheiro(const int& dinheiro)
 {
  if(dinheiro >= 0)
-    this->Dinheiro = dinheiro;
+    this->dinheiro = dinheiro;
  else
-    this->Dinheiro = 0;
+    this->dinheiro = 0;
 }
 
 int Grupo::get_Dinheiro() const
 {
- return this->Dinheiro;
+ return this->dinheiro;
 }
 
 void Grupo::Text_Menu()
@@ -86,9 +87,10 @@ void Grupo::Menu()
   case 2:
     cout << endl << endl;
     cout <<"--------------------------------- <<" << endl ;
-    cout <<"|           Inventario           |" << endl;
+    cout <<"|           Herois         |" << endl;
     cout <<"--------------------------------- <<" <<endl ;
     Mostrar_Herois(*this);
+    //cout << this->equipe[0];
     cout << "Voce tem" << this->equipe.size() << " integrantes no grupo" << endl;
   break;
   case 3:
@@ -292,7 +294,7 @@ void Grupo::Usar_Item(){
 void Grupo::Mostrar_Herois(const Grupo& grupo){
  int i;
  for(i = 0; i < (int)grupo.inventario.size(); i++)
-    cout << i << " " << grupo.equipe[i] << endl;
+    cout << i+1 << ":  " << grupo.equipe[i] << endl;
 }
 
 
@@ -441,7 +443,7 @@ void Grupo::Menu(int dungeon[][TAM], Posicao& pos_Heroi, Grupo& grupo)
 ostream& operator<<(ostream& output, const Grupo grupo)
 {
  int i;
- output << static_cast <const Grupo_Geral&> (grupo) << endl;
+// output << static_cast <const Grupo_Geral&> (grupo) << endl;
  output << "Equipe :" << endl;
  for(i = 0; i < (int) grupo.equipe.size(); i++)
  {

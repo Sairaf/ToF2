@@ -12,18 +12,31 @@
 using namespace std;
 
 static void Menu_Principal();
-static void Menu_Escolha_Personagem(Heroi*, Grupo*);
+static void Menu_Escolha_Personagem(Heroi*, Grupo&);
 
 int main()
 {
  Cidade* cidade = new Sepolopolis()   ;
- Grupo* grupo;
+// Grupo_Geral* grupo = new Grupo();
+ Grupo grupo;
  Heroi* heroi;
  Heroi* heroina;
 
  Menu_Principal();
  Menu_Escolha_Personagem(heroi, grupo);
  cidade = dynamic_cast<Sepolopolis*>(cidade);
+ if(cidade != 0)
+ {
+  system("cls")   ;
+  Heroi* geroi = grupo.equipe[0];
+  cout << geroi;
+  getch();
+  system("cls");
+  cidade->Menu_Cidade(grupo);
+ }else{
+ cout << "Error. Finalizando o programa" << endl;
+ exit(1);
+ }
  //system("pause");
  return 0;
 }
@@ -33,14 +46,13 @@ static void Menu_Principal()
 {
 	int opcao;
 
-    cout << "--/\\------------------------/\\--" <<endl;
-    cout << "  \\/   TALES OF PHANTASIA   \\/   " <<endl;
-    cout << "--------------------------------" <<endl;
+    cout << "            --/\\------------------------/\\--"  <<endl;
+    cout << "              \\/   TALES OF PHANTASIA   \\/   " <<endl;
+    cout << "            --------------------------------"    <<endl;
     cout << endl << endl;
-    cout << "Escolha uma das opcoes abaixo" << endl << endl;
-    cout << "     1 - Iniciar Partida     " << endl;
-    cout << "     2 - Sair                " << endl;
-
+    cout << "               Escolha uma das opcoes abaixo" << endl << endl;
+    cout << "                   1 - Iniciar Partida     " << endl;
+    cout << "                       2 - Sair                " << endl;
 	cin >> opcao;
 	while(opcao != 3){
 	switch(opcao){
@@ -65,12 +77,14 @@ static void Menu_Principal()
 
 }
 
-static void Menu_Escolha_Personagem(Heroi* heroi, Grupo* grupo){
+static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
   int opcao;
   string nome;
   Mago mago;
   Arma* arma = new Cajado(5);
-  grupo->set_Heroi(&mago);
+  Armadura* armadura = new Roupas_Leves;
+  Acessorio* acessorio = new Anel;
+  cout << grupo.equipe.size();
   system("cls");
   cout << "Digite o nome do personagem: ";
   cin >> nome;
@@ -95,8 +109,8 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo* grupo){
 	  if(heroi != 0)
       {
        heroi->set_Arma_Heroi(arma);
-       cout << endl<< heroi[0];
-       grupo->set_Heroi(heroi);
+       heroi->set_Armadura_Heroi(armadura);
+       heroi->set_Acessorio_Heroi(acessorio);
       }else{
        cout << "ERROR. FECHANDO O JOGO!!! :(" <<endl;
        exit(1);
@@ -136,5 +150,6 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo* grupo){
    break;
   }
  }
-
+ cout << endl<< heroi[0];
+ grupo.set_Heroi(heroi);
 }

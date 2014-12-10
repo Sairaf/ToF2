@@ -26,7 +26,9 @@ void Sepolopolis::Menu_Cidade(Grupo& grupo)
  Welcome(*this);
  this->Menu_Texto_Cidade();
  cin >> opcao;
- switch(opcao)
+while(opcao != 5)
+{
+switch(opcao)
  {
   case 1:
       //Criar um item para o vendedor vender
@@ -63,6 +65,9 @@ void Sepolopolis::Menu_Cidade(Grupo& grupo)
     this->Menu_Texto_Cidade();
     cin >> opcao;
   break;
+  case 5:
+    cout << "Obrigado por ter jogado" << endl;
+    exit(1);
   default:
     cout <<"Opcao invalida" << endl;
     getch();
@@ -70,6 +75,8 @@ void Sepolopolis::Menu_Cidade(Grupo& grupo)
     this->Menu_Texto_Cidade();
     cin >> opcao;
  }
+ }
+
 
 
 }
@@ -80,6 +87,7 @@ void Sepolopolis::Menu_Texto_Cidade()
  cout << "2 - Falar com os moradores da cidade" <<endl;
  cout << "3 - Ir para a caverna do monstro" <<endl;
  cout << "4 - Abrir menu principal" << endl;
+ cout << "5 - Sair do jogo" << endl;
 }
 
 void Sepolopolis::Vendedor(Grupo& grupo)

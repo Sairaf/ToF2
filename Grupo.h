@@ -62,6 +62,8 @@ class Grupo //: public Grupo_Geral
     static void Mostrar_Herois(const Grupo&);
     static void Mostrar_Inventario(const Grupo&);
     void Usar_Item();
+    static int Verificar_Dinheiro(Grupo&, const int&);
+    static void Descontar_Dinheiro(Grupo&, const int&);
     Grupo* operator=(const Grupo&);
     void Menu();
 

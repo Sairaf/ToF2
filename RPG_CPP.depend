@@ -1607,7 +1607,7 @@
 	"Grupo.h"
 	"Monstro.h"
 
-1418236111 c:\users\lab4-professor\documents\github\tof2\grupo.h
+1418240922 c:\users\lab4-professor\documents\github\tof2\grupo.h
 	<cstdlib>
 	<iostream>
 	<stdlib.h>
@@ -1730,7 +1730,7 @@
 1418234105 source:c:\users\lab4-professor\documents\github\tof2\faca.cpp
 	"Faca.h"
 
-1418237672 source:c:\users\lab4-professor\documents\github\tof2\grupo.cpp
+1418240561 source:c:\users\lab4-professor\documents\github\tof2\grupo.cpp
 	"Grupo.h"
 
 1418234105 source:c:\users\lab4-professor\documents\github\tof2\grupo_geral.cpp
@@ -1760,7 +1760,7 @@
 1418234105 source:c:\users\lab4-professor\documents\github\tof2\mago.cpp
 	"Mago.h"
 
-1418237404 source:c:\users\lab4-professor\documents\github\tof2\main.cpp
+1418240140 source:c:\users\lab4-professor\documents\github\tof2\main.cpp
 	<iostream>
 	<cstdlib>
 	<string>
@@ -1833,7 +1833,7 @@
 1418234105 source:c:\users\lab4-professor\documents\github\tof2\roupas_leves.cpp
 	"Roupas_Leves.h"
 
-1418237324 source:c:\users\lab4-professor\documents\github\tof2\sepolopolis.cpp
+1418240833 source:c:\users\lab4-professor\documents\github\tof2\sepolopolis.cpp
 	"Sepolopolis.h"
 
 1418234105 source:c:\users\lab4-professor\documents\github\tof2\trovao.cpp

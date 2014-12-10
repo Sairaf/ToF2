@@ -294,7 +294,7 @@ void Grupo::Usar_Item(){
 void Grupo::Mostrar_Herois(const Grupo& grupo){
  int i;
  for(i = 0; i < (int)grupo.inventario.size(); i++)
-    cout << i+1 << ":  " << grupo.equipe[i] << endl;
+    cout << i+1 << ":  " << *grupo.equipe[0] << endl;
 }
 
 
@@ -306,7 +306,29 @@ void Grupo::Mostrar_Inventario(const Grupo& grupo)
 {
  int i;
  for(i = 0; i < (int) grupo.inventario.size(); i++)
-    cout << i << " " << grupo.inventario[i] << endl;
+    cout << i+1 << ": " << *grupo.inventario[0] << endl;
+}
+
+int Grupo::Verificar_Dinheiro(Grupo& grupo, const int& prejuizo)
+{
+ if(grupo.get_Dinheiro() - prejuizo < 0)
+  return 1;
+ else
+  return 0;
+}
+
+void Grupo::Descontar_Dinheiro(Grupo& grupo, const int& prejuizo)
+{
+ int aux;
+ if(grupo.get_Dinheiro() - prejuizo < 0)
+ {
+  grupo.set_Dinheiro(0);
+ }else
+ {
+  aux = grupo.get_Dinheiro();
+  aux-=prejuizo;
+  grupo.set_Dinheiro(aux);
+ }
 }
 
 void Grupo::Imprimir(int dungeon [][TAM])
@@ -440,7 +462,7 @@ void Grupo::Menu(int dungeon[][TAM], Posicao& pos_Heroi, Grupo& grupo)
 }
 
 
-ostream& operator<<(ostream& output, const Grupo grupo)
+ostream& operator<<(ostream& output, const Grupo& grupo)
 {
  int i;
 // output << static_cast <const Grupo_Geral&> (grupo) << endl;
@@ -478,3 +500,4 @@ for(i = 0; i < (int) grupo.equipe.size(); i++)
  }
  return this;
 }
+

@@ -103,7 +103,26 @@ void Sepolopolis::Vendedor(Grupo& grupo)
   switch(opcao)
   {
    case 1:
-   //cout <<
+       opcao = 2;
+    while(opcao != 1 || opcao != 0)
+    {
+     cout << "Voce quer comprar um espelho? (1 -Y/0-N)?" << endl;
+     cin >> opcao;
+    }
+
+    if(opcao == 1)
+    {
+     if(grupo.Verificar_Dinheiro(grupo, 200) == 1)
+     {
+      grupo.Descontar_Dinheiro(grupo, 200);
+     }else{
+      cout << "Voce na tem dinheiro para comprar isto" << endl;
+     }
+    }else{
+     cout << "Fica para outro dia" << endl;
+    }
+     cout << "Deseja mais alguma coisa? " << endl;
+     cin >> opcao;
    break;
   }
  }

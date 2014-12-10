@@ -21,15 +21,16 @@ int main()
  Grupo grupo;
  Heroi* heroi;
  Heroi* heroina;
-
+ Item* espelho = new Kuraudo_Mirrors();
  Menu_Principal();
  Menu_Escolha_Personagem(heroi, grupo);
  cidade = dynamic_cast<Sepolopolis*>(cidade);
+ grupo.inventario.push_back(espelho);
  if(cidade != 0)
  {
-  system("cls")   ;
+  system("cls");
   Heroi* geroi = grupo.equipe[0];
-  cout << geroi;
+  cout << *grupo.equipe[0];
   getch();
   system("cls");
   cidade->Menu_Cidade(grupo);

@@ -23,6 +23,7 @@ class Guerreiro : public Heroi
 	virtual ~Guerreiro();
 	Guerreiro(const Guerreiro&);
 
+    void Menu_ataque(){};
  	void Equipar(Equipamento*);
 	void Subir_De_Nivel(const int&);
  	void Def_Stats();

@@ -17,7 +17,12 @@ Roupas_Leves::~Roupas_Leves()
 }
 
 ostream& operator<<(ostream& output, const Roupas_Leves& armadura){
- output << static_cast <const Equipamento&> (armadura) <<"\n";
+ output << static_cast <const Equipamento&> (armadura) << endl;
  return output;
 }
 
+Roupas_Leves* Roupas_Leves::operator+=(const Roupas_Leves& roupas)
+{
+ Armadura::operator+=(roupas);
+ return this;
+}

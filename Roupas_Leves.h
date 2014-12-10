@@ -21,6 +21,7 @@ public:
     Roupas_Leves(const Roupas_Leves&);
     void Efeito(){};
 	void Add_Bonus(const int&){};
+	Roupas_Leves* operator+=(const Roupas_Leves&);
 };
 
 #endif

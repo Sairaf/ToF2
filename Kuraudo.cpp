@@ -24,3 +24,9 @@ ostream& operator<<(ostream& output, const Kuraudo& kuraudo)
  output << static_cast <const Monstro&> (kuraudo)<< endl;
  return output;
 }
+
+Kuraudo* Kuraudo::operator+=(const Kuraudo& kuraudo)
+{
+ Monstro::operator+=(kuraudo);
+ return this;
+}

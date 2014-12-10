@@ -1,4 +1,4 @@
-#include <locale>
+/*#include <locale>
 #include <iostream>
 #include <cstdlib>
 #include <string>
@@ -40,7 +40,7 @@ int main(){
 
 
 
-/*
+
 void Menu_Inicial()
 {
  cout << "----------------------------" <<endl;
@@ -52,3 +52,4 @@ void Menu_Inicial()
  cout << "     2 - Sair                " << endl;
 }
 */
+

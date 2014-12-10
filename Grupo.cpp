@@ -3,6 +3,7 @@
 Grupo::Grupo(string nome)
 :Grupo_Geral(nome)
 {
+ int i;
 
 }
 
@@ -23,8 +24,11 @@ this->inventario.push_back(inventario);
 
 
 void Grupo::set_Heroi(Heroi* heroi){
-   if(this->equipe.size() < 3 /*this->MAX_HEROIS*/)
+   if(heroi != 0)
+   {
     this->equipe.push_back(heroi);
+    cout << "oi" << endl;
+   }
    else
     cout << "Equipe esta cheia" << endl;
  }

@@ -22,6 +22,7 @@ public:
 	~Kuraudo();
 
     void Def_Stats(){};
+    Kuraudo* operator+=(const Kuraudo&);
 };
 
 #endif

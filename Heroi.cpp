@@ -8,12 +8,16 @@ Heroi::Heroi(string nome, string descricao)
  this->lv_Atual =1;
  this->pontosExperiencia = 1000;
  this->HP = 100;
+ this->HP_atual = this->HP;
  this->MP = 100;
+ this->MP_atual = this->MP;
  this->ataque = 5;
  this->defesa = 5;
  this->velocidade = 5;
  this->magia = 5;
-
+ this->arma = NULL;
+ this->armadura = NULL;
+ this->acessorio = NULL;
 }
 
 Heroi::Heroi(const string& nome, const string& descricao,const int& hp,const int& mp,const int& ataque,const int& defesa,const int& magia,const int& velocidade)
@@ -253,15 +257,30 @@ ostream& operator<<(ostream& output, const Heroi& heroi){
     output << "Descricao: " << heroi.get_Descricao_Heroi() << endl;
     output << "Atributos: " <<endl;
     output << "Nivel: " <<heroi.get_Nivel_Heroi() << endl;
-    output << "HP: " << heroi.get_HP_ATUAL() << "/" <<heroi.get_MAX_HP_Heroi() << endl;
-    output << "MP: " << heroi.get_MP_ATUAL() << "/" <<heroi.get_MAX_MP_Heroi() << endl;
+    output << "HP: " << heroi.get_HP_ATUAL() << "/" <<heroi.get_HP_Heroi() << endl;
+    output << "MP: " << heroi.get_MP_ATUAL() << "/" <<heroi.get_MP_Heroi() << endl;
     output << "Ataque: " << heroi.get_Atk_Heroi() << endl;
     output << "Defesa: " << heroi.get_Def_Heroi() << endl;
     output << "Magia: " << heroi.get_Mag_Heroi() << endl;
     output << "Velocidade: "<< heroi.get_Vel_Heroi() << endl;
-    output << "Arma: " <<heroi.arma <<endl;
-    output << "Armadura: " <<heroi.armadura <<endl;
-    output << "Acessorio: " <<heroi.acessorio <<endl;
+
+    if(heroi.arma == NULL){
+     output << "Nao possui arma."<< endl;
+    }else{
+     output << "Arma: " <<heroi.arma <<endl;
+    }
+
+    if(heroi.armadura == NULL){
+     output << "Nao possui armadura."<< endl;
+    }else{
+     output << "Armadura: " <<heroi.armadura[0] <<endl;
+    }
+
+    if(heroi.armadura == NULL){
+     output << "Nao possui acessorio."<< endl;
+    }else{
+     output << "Acessorio: " <<heroi.acessorio[0] <<endl;
+    }
     return output;
 }
 

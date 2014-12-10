@@ -25,7 +25,7 @@ public:
 	void Equipar(Equipamento*);
 	void Subir_De_Nivel(const int&);
     void Def_Stats();
-	void Menu_Ataque();
+	void Menu_ataque(){};
 
     Ladino* operator+=(Ladino*);
 };

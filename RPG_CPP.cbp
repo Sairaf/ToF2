@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ToF" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RPG_CPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RPG_CPP" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Acessorio.cpp" />
+		<Unit filename="Acessorio.h" />
+		<Unit filename="Anel_de_Forca.cpp" />
+		<Unit filename="Anel_de_Forca.h" />
+		<Unit filename="Arma.cpp" />
+		<Unit filename="Arma.h" />
+		<Unit filename="Armadura.cpp" />
+		<Unit filename="Armadura.h" />
+		<Unit filename="Cajado.cpp" />
+		<Unit filename="Cajado.h" />
+		<Unit filename="Camtasia.cpp" />
+		<Unit filename="Camtasia.h" />
+		<Unit filename="Caverna_Monstro.cpp" />
+		<Unit filename="Caverna_Monstro.h" />
+		<Unit filename="Cidade.cpp" />
+		<Unit filename="Cidade.h" />
+		<Unit filename="Dungeon.cpp" />
+		<Unit filename="Dungeon.h" />
+		<Unit filename="Equipamento.cpp" />
+		<Unit filename="Equipamento.h" />
+		<Unit filename="Espada.cpp" />
+		<Unit filename="Espada.h" />
+		<Unit filename="Faca.cpp" />
+		<Unit filename="Faca.h" />
+		<Unit filename="Grupo.cpp" />
+		<Unit filename="Grupo.h" />
+		<Unit filename="Grupo_Geral.cpp" />
+		<Unit filename="Grupo_Geral.h" />
+		<Unit filename="Guerreiro.cpp" />
+		<Unit filename="Guerreiro.h" />
+		<Unit filename="Heroi.cpp" />
+		<Unit filename="Heroi.h" />
+		<Unit filename="Item.cpp" />
+		<Unit filename="Item.h" />
+		<Unit filename="Kuraudo.cpp" />
+		<Unit filename="Kuraudo.h" />
+		<Unit filename="Kuraudo_Mirrors.cpp" />
+		<Unit filename="Kuraudo_Mirrors.h" />
+		<Unit filename="Ladino.cpp" />
+		<Unit filename="Ladino.h" />
+		<Unit filename="Magia.cpp" />
+		<Unit filename="Magia.h" />
+		<Unit filename="Mago.cpp" />
+		<Unit filename="Mago.h" />
+		<Unit filename="Menu.cpp" />
+		<Unit filename="Menu.h" />
+		<Unit filename="Monstro.cpp" />
+		<Unit filename="Monstro.h" />
+		<Unit filename="Roupas_Leves.cpp" />
+		<Unit filename="Roupas_Leves.h" />
+		<Unit filename="Sepolopolis.cpp" />
+		<Unit filename="Sepolopolis.h" />
+		<Unit filename="Trovao.cpp" />
+		<Unit filename="Trovao.h" />
+		<Unit filename="includer.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,102 @@
+# Project: RPG_CPP
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = Acessorio.o Arma.o Armadura.o Equipamento.o Guerreiro.o Heroi.o Item.o Ladino.o Magia.o Mago.o Menu.o Monstro.o teste_Dungeon.o Espada.o Anel_de_Forca.o Cajado.o Camtasia.o Cidade.o Faca.o Grupo.o Kuraudo.o Kuraudo_Mirrors.o Roupas_Leves.o Sepolopolis.o Trovao.o $(RES)
+LINKOBJ  = Acessorio.o Arma.o Armadura.o Equipamento.o Guerreiro.o Heroi.o Item.o Ladino.o Magia.o Mago.o Menu.o Monstro.o teste_Dungeon.o Espada.o Anel_de_Forca.o Cajado.o Camtasia.o Cidade.o Faca.o Grupo.o Kuraudo.o Kuraudo_Mirrors.o Roupas_Leves.o Sepolopolis.o Trovao.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -fmessage-length=0 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = RPG_CPP.exe
+CXXFLAGS = $(CXXINCS)   -fmessage-length=0
+CFLAGS = $(INCS)   -fmessage-length=0
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before RPG_CPP.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "RPG_CPP.exe" $(LIBS)
+
+Acessorio.o: Acessorio.cpp
+	$(CPP) -c Acessorio.cpp -o Acessorio.o $(CXXFLAGS)
+
+Arma.o: Arma.cpp
+	$(CPP) -c Arma.cpp -o Arma.o $(CXXFLAGS)
+
+Armadura.o: Armadura.cpp
+	$(CPP) -c Armadura.cpp -o Armadura.o $(CXXFLAGS)
+
+Equipamento.o: Equipamento.cpp
+	$(CPP) -c Equipamento.cpp -o Equipamento.o $(CXXFLAGS)
+
+Guerreiro.o: Guerreiro.cpp
+	$(CPP) -c Guerreiro.cpp -o Guerreiro.o $(CXXFLAGS)
+
+Heroi.o: Heroi.cpp
+	$(CPP) -c Heroi.cpp -o Heroi.o $(CXXFLAGS)
+
+Item.o: Item.cpp
+	$(CPP) -c Item.cpp -o Item.o $(CXXFLAGS)
+
+Ladino.o: Ladino.cpp
+	$(CPP) -c Ladino.cpp -o Ladino.o $(CXXFLAGS)
+
+Magia.o: Magia.cpp
+	$(CPP) -c Magia.cpp -o Magia.o $(CXXFLAGS)
+
+Mago.o: Mago.cpp
+	$(CPP) -c Mago.cpp -o Mago.o $(CXXFLAGS)
+
+Menu.o: Menu.cpp
+	$(CPP) -c Menu.cpp -o Menu.o $(CXXFLAGS)
+
+Monstro.o: Monstro.cpp
+	$(CPP) -c Monstro.cpp -o Monstro.o $(CXXFLAGS)
+
+teste_Dungeon.o: teste_Dungeon.cpp
+	$(CPP) -c teste_Dungeon.cpp -o teste_Dungeon.o $(CXXFLAGS)
+
+Espada.o: Espada.cpp
+	$(CPP) -c Espada.cpp -o Espada.o $(CXXFLAGS)
+
+Anel_de_Forca.o: Anel_de_Forca.cpp
+	$(CPP) -c Anel_de_Forca.cpp -o Anel_de_Forca.o $(CXXFLAGS)
+
+Cajado.o: Cajado.cpp
+	$(CPP) -c Cajado.cpp -o Cajado.o $(CXXFLAGS)
+
+Camtasia.o: Camtasia.cpp
+	$(CPP) -c Camtasia.cpp -o Camtasia.o $(CXXFLAGS)
+
+Cidade.o: Cidade.cpp
+	$(CPP) -c Cidade.cpp -o Cidade.o $(CXXFLAGS)
+
+Faca.o: Faca.cpp
+	$(CPP) -c Faca.cpp -o Faca.o $(CXXFLAGS)
+
+Grupo.o: Grupo.cpp
+	$(CPP) -c Grupo.cpp -o Grupo.o $(CXXFLAGS)
+
+Kuraudo.o: Kuraudo.cpp
+	$(CPP) -c Kuraudo.cpp -o Kuraudo.o $(CXXFLAGS)
+
+Kuraudo_Mirrors.o: Kuraudo_Mirrors.cpp
+	$(CPP) -c Kuraudo_Mirrors.cpp -o Kuraudo_Mirrors.o $(CXXFLAGS)
+
+Roupas_Leves.o: Roupas_Leves.cpp
+	$(CPP) -c Roupas_Leves.cpp -o Roupas_Leves.o $(CXXFLAGS)
+
+Sepolopolis.o: Sepolopolis.cpp
+	$(CPP) -c Sepolopolis.cpp -o Sepolopolis.o $(CXXFLAGS)
+
+Trovao.o: Trovao.cpp
+	$(CPP) -c Trovao.cpp -o Trovao.o $(CXXFLAGS)

@@ -76,8 +76,6 @@
 		<Unit filename="Magia.h" />
 		<Unit filename="Mago.cpp" />
 		<Unit filename="Mago.h" />
-		<Unit filename="Menu.cpp" />
-		<Unit filename="Menu.h" />
 		<Unit filename="Monstro.cpp" />
 		<Unit filename="Monstro.h" />
 		<Unit filename="Roupas_Leves.cpp" />
@@ -87,7 +85,7 @@
 		<Unit filename="Trovao.cpp" />
 		<Unit filename="Trovao.h" />
 		<Unit filename="includer.h" />
-		<Unit filename="teste_Dungeon.cpp" />
+		<Unit filename="main.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

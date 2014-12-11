@@ -15,7 +15,7 @@ class Arma : public Equipamento
  friend ostream& operator<<(ostream& output, const Arma&);
  public:
  	Arma(int poder_Ataque = 0);
-	Arma(const string&, const string&,const int& ,const int& ,const int& ,const int&, const int& );
+	Arma(const string&, const string&,const int& ,const int& ,const int& ,const int&, const int&, const int& );
 	Arma(const Arma&);
 	virtual ~Arma();
 

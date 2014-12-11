@@ -19,7 +19,7 @@ class Acessorio : public Equipamento
  public:
     Acessorio(int poder = 0);
 	Acessorio(string nome = "Acessorio", string descricao = "**********");
-	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel, const string&, const int&);
+	Acessorio(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel, const string&, const int&, const int&);
 	Acessorio(const Acessorio&);
 	~Acessorio();
 

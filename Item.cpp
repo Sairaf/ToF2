@@ -6,15 +6,17 @@ Item::Item(string nome, string descricao)
 :nome_Item(nome), descricao_Item(descricao)
 {
   this->durabilidade = 5;
+  this->preco = 300;
   this->consumivel = true;
 }
 
-Item::Item(const string& nome,const string& descricao, const int& durabilidade, const bool& consumivel)
+Item::Item(const string& nome,const string& descricao, const int& durabilidade, const bool& consumivel, const int& preco)
 {
   this->nome_Item = nome;
   this->descricao_Item = descricao;
   this->durabilidade = durabilidade;
   this->consumivel = true;
+  this->set_Preco(preco);
 }
 
 Item::~Item()
@@ -48,6 +50,13 @@ void Item::set_Durabilidade(const int& durabilidade){
     this->durabilidade = 1;
 }
 
+void Item::set_Preco(const int& preco)
+{
+ if(preco >= 0)
+   this->preco = preco;
+ else
+   this->preco = 0;
+}
 string Item::get_Nome_Item() const{
   return this->nome_Item;
 }
@@ -60,6 +69,9 @@ int Item::get_Durabilidade() const{
   return this->durabilidade;
 }
 
+int Item::get_Preco() const{
+  return this->preco;
+}
 
 ostream& operator<<(ostream& output, const Item& item){
  output << endl;

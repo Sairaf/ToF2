@@ -17,7 +17,7 @@ class Armadura : public Equipamento
 
 public:
 	Armadura(int b_Defesa = 0);
-	Armadura(const string&, const string&, const int&,const int&,const int&,const int&,const int&);
+	Armadura(const string&, const string&, const int&,const int&,const int&,const int&,const int&, const int&);
 	Armadura(const Armadura&);
 	virtual ~Armadura();
 

@@ -82,7 +82,7 @@ void Grupo::Menu()
     cout <<"--------------------------------- <<" <<endl ;
 
     Mostrar_Inventario(*this);
-    cout << "Voce tem" << this->inventario.size() << " Itens" << endl;
+    cout << "Voce tem " << this->inventario.size() << " Itens" << endl;
   break;
   case 2:
     cout << endl << endl;
@@ -91,7 +91,7 @@ void Grupo::Menu()
     cout <<"--------------------------------- <<" <<endl ;
     Mostrar_Herois(*this);
     //cout << this->equipe[0];
-    cout << "Voce tem" << this->equipe.size() << " integrantes no grupo" << endl;
+    cout << "Voce tem " << this->equipe.size() << " integrantes no grupo" << endl;
   break;
   case 3:
      system("cls");
@@ -120,13 +120,13 @@ void Grupo::Batalhar(Monstro* monstro){
  bool M_Atacou = false;
  int cont, num_Herois_apto, result= 0, max_Vel;
  int aux_Stat_Her, Magia_Utilizada, flag = 0, alvo, cont_turno;
- vector<Magia*> aux_Magia = ;
-
-
+ vector<Magia*> aux_Magia;
+ aux_Magia = monstro->get_Habilidades_Monstro();
+cout << "Erro" << endl;
  srand(time(NULL));
  alvo = rand()%this->equipe.size() + 0;
- cout << "Erroorre" << endl;
- Magia_Utilizada = rand()%aux_Magia.size() + 0;
+ //cout << "Erroorre" << endl;
+ Magia_Utilizada = rand()%3 + 0;
 
   do
   {
@@ -314,21 +314,22 @@ void Grupo::Mostrar_Inventario(const Grupo& grupo)
 
 int Grupo::Verificar_Dinheiro(Grupo& grupo, const int& prejuizo)
 {
- if(grupo.get_Dinheiro() - prejuizo < 0)
-  return 1;
- else
+ int aux = grupo.get_Dinheiro();
+ if(aux- prejuizo < 0)
   return 0;
+ else
+  return 1;
 }
 
 void Grupo::Descontar_Dinheiro(Grupo& grupo, const int& prejuizo)
 {
  int aux;
- if(grupo.get_Dinheiro() - prejuizo < 0)
+ aux = grupo.get_Dinheiro();
+ if(aux - prejuizo < 0)
  {
   grupo.set_Dinheiro(0);
  }else
  {
-  aux = grupo.get_Dinheiro();
   aux-=prejuizo;
   grupo.set_Dinheiro(aux);
  }

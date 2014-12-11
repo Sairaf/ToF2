@@ -32,8 +32,8 @@ Equipamento::Equipamento(int b_Atk, int dif)
  this->bonus_Vel = 0;
 }
 
-Equipamento::Equipamento(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel,const int& durabilidade)
-:Item(nome, descricao, durabilidade, false)
+Equipamento::Equipamento(const string& nome,const string& descricao,const int& b_Atk,const int& b_Def,const int& b_Mag,const int& b_Vel,const int& durabilidade,const int& preco)
+:Item(nome, descricao, durabilidade, false,preco)
 {
  this->bonus_Atk = b_Atk;
  this->bonus_Def = b_Def;

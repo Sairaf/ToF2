@@ -1,7 +1,7 @@
 #include "Armadura.h"
 
-Armadura::Armadura(const string& nome, const string& descricao, const int& atk,const int& def,const int& mag,const int& vel,const int& dur)
-:Equipamento(nome, descricao, atk, def,mag,vel,dur)
+Armadura::Armadura(const string& nome, const string& descricao, const int& atk,const int& def,const int& mag,const int& vel,const int& dur, const int& preco)
+:Equipamento(nome, descricao, atk, def,mag,vel,dur, preco)
 {
 
 }

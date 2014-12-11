@@ -1,7 +1,7 @@
 #include "Faca.h"
 
 Faca::Faca()
-:Arma("Faca", "Faca de cozinha ordinaria", 10,0,0,0,10)
+:Arma("Faca", "Faca de cozinha ordinaria", 10,0,0,0,10,200)
 {
 
 }

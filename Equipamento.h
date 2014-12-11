@@ -24,7 +24,7 @@ public:
 	Equipamento(int bonus = 0);
 	Equipamento(int bonus = 0, int dif = 0);
 	Equipamento(const Equipamento&);
-	Equipamento(const string& nome,const string& descricao, const int&, const int&, const int&, const int&, const int&);
+	Equipamento(const string& nome,const string& descricao, const int&, const int&, const int&, const int&, const int&, const int&);
 	virtual ~Equipamento();
 
 	void setAtk(const int&);

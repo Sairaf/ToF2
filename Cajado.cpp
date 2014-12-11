@@ -7,7 +7,7 @@ Cajado::Cajado(int poder)
 }
 
 Cajado::Cajado()
-:Arma("Cajado", "Cajado de madeira",3,0,5,0,10)
+:Arma("Cajado", "Cajado de madeira",3,0,5,0,10,300)
 {
 
 }

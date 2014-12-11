@@ -715,17 +715,17 @@
 	<typeinfo>
 	"includer.h"
 
-1418254573 source:c:\users\abgerson\documents\github\tof2\acessorio.cpp
+1418261698 source:c:\users\abgerson\documents\github\tof2\acessorio.cpp
 	"Acessorio.h"
 
-1418254573 c:\users\abgerson\documents\github\tof2\acessorio.h
+1418261690 c:\users\abgerson\documents\github\tof2\acessorio.h
 	<string>
 	<vector>
 	<list>
 	<iostream>
 	"Equipamento.h"
 
-1418254574 c:\users\abgerson\documents\github\tof2\equipamento.h
+1418261661 c:\users\abgerson\documents\github\tof2\equipamento.h
 	<string>
 	<vector>
 	<list>
@@ -733,7 +733,7 @@
 	<assert.h>
 	"Item.h"
 
-1418254574 c:\users\abgerson\documents\github\tof2\item.h
+1418261377 c:\users\abgerson\documents\github\tof2\item.h
 	<string>
 	<vector>
 	<list>
@@ -742,7 +742,7 @@
 	<time.h>
 	<assert.h>
 
-1418254573 source:c:\users\abgerson\documents\github\tof2\anel_de_forca.cpp
+1418261713 source:c:\users\abgerson\documents\github\tof2\anel_de_forca.cpp
 	"Anel_de_Forca.h"
 
 1418254573 c:\users\abgerson\documents\github\tof2\anel_de_forca.h
@@ -753,19 +753,19 @@
 	"Acessorio.h"
 	"Equipamento.h"
 
-1418254573 source:c:\users\abgerson\documents\github\tof2\arma.cpp
+1418261743 source:c:\users\abgerson\documents\github\tof2\arma.cpp
 	"Arma.h"
 
-1418254573 c:\users\abgerson\documents\github\tof2\arma.h
+1418261733 c:\users\abgerson\documents\github\tof2\arma.h
 	<string>
 	<vector>
 	<iostream>
 	"Equipamento.h"
 
-1418254573 source:c:\users\abgerson\documents\github\tof2\armadura.cpp
+1418261773 source:c:\users\abgerson\documents\github\tof2\armadura.cpp
 	"Armadura.h"
 
-1418254573 c:\users\abgerson\documents\github\tof2\armadura.h
+1418261774 c:\users\abgerson\documents\github\tof2\armadura.h
 	<string>
 	<vector>
 	<list>
@@ -773,7 +773,7 @@
 	<assert.h>
 	"Equipamento.h"
 
-1418254573 source:c:\users\abgerson\documents\github\tof2\cajado.cpp
+1418261787 source:c:\users\abgerson\documents\github\tof2\cajado.cpp
 	"Cajado.h"
 
 1418254573 c:\users\abgerson\documents\github\tof2\cajado.h
@@ -945,16 +945,16 @@
 1418254574 source:c:\users\abgerson\documents\github\tof2\dungeon.cpp
 	"Dungeon.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\equipamento.cpp
+1418261835 source:c:\users\abgerson\documents\github\tof2\equipamento.cpp
 	"Equipamento.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\espada.cpp
+1418261802 source:c:\users\abgerson\documents\github\tof2\espada.cpp
 	"Espada.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\faca.cpp
+1418261797 source:c:\users\abgerson\documents\github\tof2\faca.cpp
 	"Faca.h"
 
-1418258939 source:c:\users\abgerson\documents\github\tof2\grupo.cpp
+1418262434 source:c:\users\abgerson\documents\github\tof2\grupo.cpp
 	"Grupo.h"
 
 1418254574 source:c:\users\abgerson\documents\github\tof2\grupo_geral.cpp
@@ -966,13 +966,13 @@
 1418254574 source:c:\users\abgerson\documents\github\tof2\heroi.cpp
 	"Heroi.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\item.cpp
+1418261888 source:c:\users\abgerson\documents\github\tof2\item.cpp
 	"Item.h"
 
 1418254574 source:c:\users\abgerson\documents\github\tof2\kuraudo.cpp
 	"Kuraudo.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\kuraudo_mirrors.cpp
+1418261903 source:c:\users\abgerson\documents\github\tof2\kuraudo_mirrors.cpp
 	"Kuraudo_Mirrors.h"
 
 1418254574 source:c:\users\abgerson\documents\github\tof2\ladino.cpp
@@ -994,7 +994,7 @@
 1418254574 source:c:\users\abgerson\documents\github\tof2\monstro.cpp
 	"Monstro.h"
 
-1418254574 source:c:\users\abgerson\documents\github\tof2\roupas_leves.cpp
+1418261817 source:c:\users\abgerson\documents\github\tof2\roupas_leves.cpp
 	"Roupas_Leves.h"
 
 1418254574 c:\users\abgerson\documents\github\tof2\roupas_leves.h
@@ -1005,7 +1005,7 @@
 	<assert.h>
 	"Armadura.h"
 
-1418255476 source:c:\users\abgerson\documents\github\tof2\sepolopolis.cpp
+1418262302 source:c:\users\abgerson\documents\github\tof2\sepolopolis.cpp
 	"Sepolopolis.h"
 
 1418255299 c:\users\abgerson\documents\github\tof2\sepolopolis.h
@@ -1065,7 +1065,7 @@
 1418254574 source:c:\users\abgerson\documents\github\tof2\trovao.cpp
 	"Trovao.h"
 
-1418260351 source:c:\users\abgerson\documents\github\tof2\main.cpp
+1418262308 source:c:\users\abgerson\documents\github\tof2\main.cpp
 	<iostream>
 	<cstdlib>
 	<string>

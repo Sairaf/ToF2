@@ -78,11 +78,8 @@ switch(opcao)
     system("cls");
     this->Menu_Texto_Cidade();
     cin >> opcao;
+  }
  }
- }
-
-
-
 }
 
 void Sepolopolis::Menu_Texto_Cidade()
@@ -97,6 +94,7 @@ void Sepolopolis::Menu_Texto_Cidade()
 void Sepolopolis::Vendedor(Grupo& grupo)
 {
  int opcao;
+ Item* espelho = new Kuraudo_Mirrors();
  cout << "Bem-vindo estranho" << endl;
  cout << "Ei, queres comprar alguma coisa?" << endl << endl;
  cout << "1 - Comprar itens" <<endl;
@@ -108,7 +106,7 @@ void Sepolopolis::Vendedor(Grupo& grupo)
   {
    case 1:
        opcao = 2;
-    while(opcao != 1 || opcao != 0)
+    while(opcao != 1 && opcao != 0)
     {
      cout << "Voce quer comprar um espelho? (1 -Y/0-N)?" << endl;
      cin >> opcao;
@@ -116,15 +114,19 @@ void Sepolopolis::Vendedor(Grupo& grupo)
 
     if(opcao == 1)
     {
-     if(grupo.Verificar_Dinheiro(grupo, 200) == 1)
+     if(grupo.Verificar_Dinheiro(grupo, espelho->get_Preco()) == 1)
      {
-      grupo.Descontar_Dinheiro(grupo, 200);
+
+      grupo.Descontar_Dinheiro(grupo, espelho->get_Preco());
+      grupo.set_Item(espelho);
+      cout << "Obrigado por comprar conosco";
      }else{
-      cout << "Voce na tem dinheiro para comprar isto" << endl;
+      cout << "Voce nao tem dinheiro para comprar isto" << endl;
      }
     }else{
      cout << "Fica para outro dia" << endl;
     }
+     cout <<endl <<endl  <<"Voce tem:" << grupo.get_Dinheiro() << endl;
      cout << "Deseja mais alguma coisa? " << endl;
      cin >> opcao;
    break;

@@ -1,7 +1,7 @@
 #include "Roupas_Leves.h"
 
 Roupas_Leves::Roupas_Leves()
-:Armadura("Roupas leves","Roupas para o dia-a-dia", 0, 5, 0,1, 10)
+:Armadura("Roupas leves","Roupas para o dia-a-dia", 0, 5, 0,1, 10,200)
 {
 
 }

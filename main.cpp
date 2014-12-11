@@ -26,10 +26,10 @@ int main()
 
  if(monstro != 0)
  {
-  grupo.Batalhar(monstro);
+ // grupo.Batalhar(monstro);
  }
  cidade = dynamic_cast<Sepolopolis*>(cidade);
- grupo.inventario.push_back(espelho);
+// grupo.inventario.push_back(espelho);
  if(cidade != 0)
  {
 

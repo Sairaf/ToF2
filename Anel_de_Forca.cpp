@@ -8,7 +8,7 @@ Anel::Anel(int poder)
 }
 */
 Anel::Anel()
-:Acessorio("Anel de forca", "Anel que concede um bonus de forca ao usuario",1,1,0,0,"Fogo",15)
+:Acessorio("Anel de forca", "Anel que concede um bonus de forca ao usuario",1,1,0,0,"Fogo",15,300)
 {
 
 }

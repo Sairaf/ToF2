@@ -24,6 +24,7 @@ void Sepolopolis::Menu_Cidade(Grupo& grupo)
 {
  int opcao;
  Welcome(*this);
+ Dungeon* dungeon = new Caverna_Monstro();
  this->Menu_Texto_Cidade();
  cin >> opcao;
 while(opcao != 5)
@@ -32,8 +33,7 @@ switch(opcao)
  {
   case 1:
       //Criar um item para o vendedor vender
-      cout << "Aparentemente o vendedor saiu de ferias" << endl;
-      cout << "Volte outra hora" << endl;
+      this->Vendedor(grupo);
       getch();
       system("cls");
       this->Menu_Texto_Cidade();
@@ -55,7 +55,11 @@ switch(opcao)
       cin >> opcao;
   break;
   case 3:
-
+  dungeon = dynamic_cast <Caverna_Monstro*>(dungeon);
+  if(dungeon != 0)
+  {
+   dungeon->Salas(grupo);
+  }
   break;
 
   case 4:

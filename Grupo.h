@@ -22,11 +22,6 @@
 
 using namespace std;
 
-typedef struct {
-  int c_X;
-  int c_Y;
-}Posicao;
-
 
 class Grupo //: public Grupo_Geral
 {
@@ -50,10 +45,6 @@ class Grupo //: public Grupo_Geral
     void set_Item(Item*);
 
     int get_Dinheiro() const;
-    void Imprimir(int [][TAM]);
-    int  Pesquisar(int [][TAM], int );
-    void Menu(int [][TAM], Posicao&, Grupo&);
-    Posicao get_Pos(int  [][TAM]);
 
     void Text_Menu();
     void Atacar(Heroi*, Monstro*);

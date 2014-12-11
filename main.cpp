@@ -16,23 +16,26 @@ static void Menu_Escolha_Personagem(Heroi*, Grupo&);
 
 int main()
 {
- Cidade* cidade = new Sepolopolis()   ;
-// Grupo_Geral* grupo = new Grupo();
+ Cidade* cidade = new Sepolopolis();
  Grupo grupo;
  Heroi* heroi;
- Heroi* heroina;
+ Monstro* monstro = new Kuraudo();
  Item* espelho = new Kuraudo_Mirrors();
  Menu_Principal();
  Menu_Escolha_Personagem(heroi, grupo);
+
+ if(monstro != 0)
+ {
+  grupo.Batalhar(monstro);
+ }
  cidade = dynamic_cast<Sepolopolis*>(cidade);
  grupo.inventario.push_back(espelho);
  if(cidade != 0)
  {
-  system("cls");
-  Heroi* geroi = grupo.equipe[0];
-  cout << *grupo.equipe[0];
-  getch();
-  system("cls");
+
+  //cidade->Add_NPC("Ola, viajante. De boa na lagoa?");
+ // cidade->Add_NPC("Voce e novo por aqui? Nao lembro de te-lo visto por aqui antes.");
+ // cidade->Add_NPC("I am Error... Brincadeira XD.");
   cidade->Menu_Cidade(grupo);
  }else{
  cout << "Error. Finalizando o programa" << endl;
@@ -46,14 +49,14 @@ int main()
 static void Menu_Principal()
 {
 	int opcao;
-
     cout << "            --/\\------------------------/\\--"  <<endl;
     cout << "              \\/   TALES OF PHANTASIA   \\/   " <<endl;
     cout << "            --------------------------------"    <<endl;
     cout << endl << endl;
     cout << "               Escolha uma das opcoes abaixo" << endl << endl;
     cout << "                   1 - Iniciar Partida     " << endl;
-    cout << "                       2 - Sair                " << endl;
+    cout << "                       2 - Sair                " << endl << endl;
+    cout << "                  2014@ Elog Studios" << endl;
 	cin >> opcao;
 	while(opcao != 3){
 	switch(opcao){
@@ -80,7 +83,8 @@ static void Menu_Principal()
 
 static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
   int opcao;
-  string nome;
+  string nome, descricao;
+  cout << "Hel  lo" << endl;
   Mago mago;
   Arma* arma = new Cajado(5);
   Armadura* armadura = new Roupas_Leves;
@@ -89,6 +93,8 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
   system("cls");
   cout << "Digite o nome do personagem: ";
   cin >> nome;
+  cout << "Digite a descricao do heroi: ";
+  cin >> descricao;
   cout << "Escolha sua especializacao: " << endl << endl;
   cout << "1 - Mago" << endl;
   cout << "2 - Guerreiro" << endl;
@@ -104,7 +110,7 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
   {
    case 1:
 	  cout << "Mago selecionado " << endl;
-	  heroi = new Mago(nome);
+	  heroi = new Mago(nome, descricao);
       heroi = dynamic_cast<Mago*>(heroi);
 
 	  if(heroi != 0)
@@ -120,7 +126,7 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
 	  break;
    case 2:
       cout << "Guerreiro selecionado. " << endl;
-      heroi = new Guerreiro();
+      heroi = new Guerreiro(nome, descricao);
       heroi = dynamic_cast<Guerreiro*>(heroi);
 
 	  if(heroi != 0)
@@ -133,7 +139,7 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
 	  break;
    case 3:
       cout << "Ladino selecionado" << endl;
-      heroi = new Ladino(nome);
+      heroi = new Ladino(nome, descricao);
       heroi = dynamic_cast<Ladino*>(heroi);
 
 	  if(heroi != 0)
@@ -151,6 +157,7 @@ static void Menu_Escolha_Personagem(Heroi* heroi, Grupo& grupo){
    break;
   }
  }
+ cout << "Heroi selecionado:" << endl << endl;
  cout << endl<< heroi[0];
  grupo.set_Heroi(heroi);
 }

@@ -86,6 +86,12 @@ ostream& operator<<(ostream& output, const Magia& magia){
   return output;
 }
 
+Magia* Magia::operator+=(const Magia& magia)
+{
+ this->poder_Magia+= magia.poder_Magia;
+ return this;
+}
+
 bool Magia::operator==(const Magia& magia){
  if(this->nome_Magia == magia.nome_Magia  && this->poder_Magia == magia.poder_Magia && this->descricao_Magia == magia.descricao_Magia && this->elemento == magia.elemento)
   return true;
@@ -105,8 +111,4 @@ Magia* Magia::operator=(const Magia& magia){
   return this;
 }
 
-Magia* Magia::operator+=(const Magia& magia)
-{
- this->poder_Magia+= magia.poder_Magia;
- return this;
-}
+

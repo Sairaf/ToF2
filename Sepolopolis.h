@@ -4,6 +4,8 @@
 #include <iostream>
 #include <cstdlib>
 #include <string>
+#include "Dungeon.h"
+#include "Caverna_Monstro.h"
 #include "Cidade.h"
 
 
